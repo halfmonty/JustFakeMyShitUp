@@ -1,0 +1,36 @@
+<br/><br/>
+
+<div class="row">
+    <div class="col">
+        <input type="text" [value]="them.Name" (input)="them.Name = $event.target.value">
+    </div>
+</div>
+
+<div class="scale">
+    <ios9imessage [messages]="messages" [you]="you" [them]="them" ></ios9imessage>
+</div>
+
+<br/>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col">
+        <div class="row">
+            <div class="col-2">
+                <label class="switch">
+                    <input type="checkbox" [checked]="themOrYou" (change)="themOrYou = !themOrYou">
+                    <div class="slider round"></div>
+                </label>
+                <span class="iosName" style="padding-bottom: 5px;">{{themOrYou ? 'You' : 'Them'}}</span>
+            </div>
+            <div class="col">
+                <input #message class="form-control" (input)="false" type="text">
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-primary" (click)="addMessage(message?.value); message.value = '';">Add Message</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-2"></div>
+</div>
+
+<br/><br/>

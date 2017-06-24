@@ -1,0 +1,302 @@
+.mainBox{
+    height: 1334px;
+    width: 740px;
+    box-shadow: 5px 5px 20px #888888;
+}
+
+.iosHeader{
+    height: 110px;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.notificationHeader{
+    padding-top: 5px;
+}
+
+.uiHeader{
+    padding-top: 10px;
+}
+
+.iosTime{
+    font-family: "San Francisco Semi Bold";
+    font-size: 25px;
+}
+
+.iosBattery{
+    font-family: "San Francisco";
+    font-size: 25px;
+}
+
+.iosUi{
+    font-family: "San Francisco";
+    font-size: 30px;
+    color: #0B93F6;
+}
+
+.iosName{
+    font-family: "San Francisco Bold";
+    font-size: 30px;
+}
+
+.iosContent{
+    height: 1134px;
+}
+
+.iosFooter{
+    height: 90px;
+    background-color: #FAFAFA;
+    border-top: 1px solid #E0E0E0;
+}
+
+.footericon{
+    line-height: 90px;
+}
+
+.fakeInput{
+    padding-top: 6px;
+    margin-left: -15px;
+}
+
+.imessageInput{
+    width: 105%;
+    padding: 20px 10px 12px 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    opacity: 0.3;
+    font-family: "San Francisco";
+    font-size: 32px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    opacity: 0.3;
+    font-family: "San Francisco";
+    font-size: 32px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    opacity: 0.3;
+    font-family: "San Francisco";
+    font-size: 32px;
+}
+:-moz-placeholder { /* Firefox 18- */
+    opacity: 0.3;
+    font-family: "San Francisco";
+    font-size: 32px;
+}
+
+section {
+    font-family: "San Francisco";
+    font-size: 30px;
+    font-weight: normal;
+    
+    padding: 20px;
+    position: absolute;
+    width: 96%;
+    max-height: 1134px;
+    bottom: 0px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+section div {
+  max-width: 500px;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+  line-height: 34px;
+}
+
+.clear {
+  clear: both;
+}
+
+.from-me {
+  position: relative;
+  padding: 10px 20px 0px 20px;
+  color: white;
+  background: #0B93F6;
+  border-radius: 25px;
+  float: right;
+}
+.from-me:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -2px;
+  right: -7px;
+  height: 20px;
+  border-right: 20px solid #0B93F6;
+  border-bottom-left-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+}
+.from-me:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -2px;
+  right: -56px;
+  width: 26px;
+  height: 20px;
+  background: white;
+  border-bottom-left-radius: 10px;
+  -webkit-transform: translate(-30px, -2px);
+}
+
+.from-them {
+  position: relative;
+  padding: 10px 20px 0px 20px;
+  background: #E5E5EA;
+  border-radius: 25px;
+  color: black;
+  float: left;
+}
+.from-them:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: -2px;
+  left: -7px;
+  height: 20px;
+  border-left: 20px solid #E5E5EA;
+  border-bottom-right-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+}
+.from-them:after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  bottom: -2px;
+  left: 4px;
+  width: 26px;
+  height: 20px;
+  background: white;
+  border-bottom-right-radius: 10px;
+  -webkit-transform: translate(-30px, -2px);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco Ultra Light";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco Thin";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco Medium";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco Semi Bold";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */ 
+@font-face {
+  font-family: "San Francisco Bold";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+body{
+    font-family: "San Francisco";
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.scale{
+    margin-bottom: -25%;
+    -ms-transform: scale(1,1); /* IE 9 */
+     -ms-transform-origin: top;
+    -webkit-transform: scale(1,1); /* Safari */
+    -webkit-transform: top;
+    transform: scale(.75,.75); /* Standard syntax */
+    transform-origin: top;    
+}
