@@ -33,40 +33,12 @@
     <div class="row iosContent">
         <div class="col">
             <section id="content" class="" #content>
-                <ng-container *ngFor="let message of messages">
+                <ng-container #messagesContainer *ngFor="let message of messages">
                     <div [ngClass]="{'from-them': (message.User == them), 'from-me': (message.User == you)}">
                         <p>{{message.Text}}</p>
                     </div>
                     <div class="clear"></div>                    
                 </ng-container>
-
-                <!--<div class="from-me">
-                    <p>I heard you had news for me.</p>
-                </div>
-                <div class="clear"></div>
-                    <div class="from-them">
-                    <p>Putin, pal. Great to hear from you. I've great news. The best news. </p>
-                    </div>
-                <div class="clear"></div>
-                    <div class="from-them">
-                    <p>We've finally put rest the concerns over our close friendship. </p>
-                    </div>
-                <div class="clear"></div>
-                    <div class="from-me">
-                    <p>This is good to hear, as we are not close friends.</p>
-                    </div>
-                <div class="clear"></div>
-                    <div class="from-them">
-                    <p>You're a funny guy, I'm glad we are friends. Everyone knows the russians love me, bigly. Frankly, ask anyone and they will tell you. We go way back. Anyway, it has finally been put to rest. </p>
-                    </div>
-                <div class="clear"></div>
-                    <div class="from-me">
-                    <p>How did you do it?</p>
-                    </div>
-                <div class="clear"></div>
-                    <div class="from-them">
-                    <p>Three words: covfefe</p>
-                    </div>-->
             </section>
         </div>
     </div>

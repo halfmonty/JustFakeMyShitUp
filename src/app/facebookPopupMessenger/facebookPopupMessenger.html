@@ -1,0 +1,58 @@
+<div class="mainBox container">
+    <div class="row header">
+        <div class="col">
+            <div class="float-left" style="margin: 0px 0px 0px -5px;">
+                {{them.Name}}
+            </div>            
+            <div style="margin: 7px -5px 0px 0px;">
+                <i class="fa fa-times float-right" style="margin: 0px 0px 0px 12px;" aria-hidden="true"></i>
+                <i class="fa fa-cog float-right" aria-hidden="true" style="margin: 0px 0px 0px 12px;"></i>
+                <i class="fa fa-phone float-right" aria-hidden="true" style="margin: 0px 0px 0px 12px;"></i>
+                <i class="fa fa-video-camera float-right" aria-hidden="true" style="margin: 0px 0px 0px 12px;"></i>
+                <i class="fa fa-plus float-right" style="margin: 0px 0px 0px 12px;" aria-hidden="true"></i>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row messages">
+        <div class="col">
+            <section id="content" class="" #content>
+                <ng-container #messagesContainer *ngFor="let message of messages">
+                    <div class="row align-items-end">
+                        <div class="col-1 no-gutters" *ngIf="message.User == them">
+                            <div class="circle-wrapper">
+                                <img [src]="message.User.Avatar" alt="" />
+                            </div>
+                        </div>
+                        <div class="col no-gutters">
+                            <div [ngClass]="{'from-them': (message.User == them), 'from-me': (message.User == you)}"
+                                class="message">
+                                <p>{{message.Text}}</p>
+                            </div>
+                        </div>                    
+                    </div>                 
+                </ng-container>
+                            
+            </section>
+        </div>
+    </div>
+
+    <div class="row footer">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <div class="placeholderText">
+                        Type a message...
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="footerImg" src="assets/fbbar.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

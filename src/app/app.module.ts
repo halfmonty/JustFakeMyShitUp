@@ -1,3 +1,4 @@
+import { facebookPopupMessenger } from './facebookPopupMessenger/facebookPopupMessenger';
 import { ios9imessage } from './ios9imessage/ios9imessage';
 import { AboutComponent } from './pages/about/about';
 import { HomeComponent } from './pages/home/home';
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ios9imessage
+    ios9imessage,
+    facebookPopupMessenger
   ],
   imports: [
     BrowserModule,

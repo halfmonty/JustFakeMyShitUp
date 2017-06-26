@@ -1,6 +1,7 @@
 .mainBox{
     height: 1334px;
     width: 740px;
+    min-width: 740px;
     box-shadow: 5px 5px 20px #888888;
 }
 
@@ -226,10 +227,6 @@ section div {
   font-family: "San Francisco Bold";
   font-weight: 700;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
-}
-
-body{
-    font-family: "San Francisco";
 }
 
 /* The switch - the box around the slider */
